@@ -1,27 +1,20 @@
-# Laravel PHP Framework
+# Laranews - Simple News Management Built With Laravel
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Laranews is a simple apps built with laravel for news management. This apps is built for demo in PHP Jogloraya Meetup talking about laravel.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+Laranews adalah sebuah aplikasi manajemen berita/artikel sederhana yang dibangun dengan laravel. Aplikasi ini dibuat untuk demo dalam meetup PHP Jogloraya ke-9.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## How to Install
 
-## Official Documentation
-
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+1. Clone/download this repo to your PC.
+2. Run composer install from your application root directory to install laravel & it's dependencies.
+3. Grab a copy of .env file from [here](https://github.com/laravel/laravel/blob/master/.env.example), rename it to .env and place it on your application root directory. Change your database configuration in here.
+4. Run php artisan key:generate to generate a new application key
+3. Run php artisan migrate to run the migration. This will generate the table for the apps on your database.
+4. Run php artisan db:seed to generate an admin user.
+5. Run php artisan serve to use the php built in web server then acces it with (http://localhost:8000). Of coure if you use another web server such apache, just put your apps on the root directory of your web server, example /var/www/html and access it with (http://localhost/laranews/public)
+6. You're done! 
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+The laranews is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
